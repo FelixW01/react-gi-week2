@@ -7,6 +7,8 @@ function App() {
  const [movieId, setMovieId] = useState("");
  const [movieList, setMovieList] = useState([])
 
+
+ // Axios get to search movie ID for the similar movies API from user input on submit
  const handleSubmit = async () => {
     console.log(searchInput, '<< searchInput')
     // This is vite's way of doing .ENV
@@ -29,6 +31,7 @@ function App() {
     }
  }, [movieId])
 
+// Axios get call to similar movies from movie ID
  const similarMovies = async () => {
   console.log(movieId)
   const url = `https://api.themoviedb.org/3/movie/${encodeURIComponent(movieId)}/similar?api_key=${import.meta.env.VITE_API_KEY}&include_adult=false&language=en-US&page=1`;

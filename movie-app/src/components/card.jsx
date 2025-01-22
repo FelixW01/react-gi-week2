@@ -7,6 +7,7 @@ function Card({movieList}) {
     <>
     {movieList.length > 0 ? 
     <div id="heroDiv">
+    {/* Iterate through movieList prop, creates a new array with .map and render cards dynamically */}
     {movieList.map((movie => {
       return (
       <div className="card" key={movie.id}>

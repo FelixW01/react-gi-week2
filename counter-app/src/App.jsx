@@ -10,12 +10,15 @@ function App() {
       <h2>{count}</h2>
 
       <div className="card">
-      {/* Used + and - instead of increment or decrement for better accessibility since these symbols are more universally known. */}
+      {/* Used symbols instead of increment, decrement or reset for better accessibility since these symbols are more universally known. */}
         <button  className="increment-btn" onClick={() => setCount((count) => count + 1)}>
           +
         </button>
-        <button onClick={() => setCount((count) => count - 1)}>
+        <button className="decrement-btn" onClick={() => setCount((count) => count - 1)}>
           -
+        </button>
+        <button onClick={() => setCount(0)}>
+          &#x27F3;
         </button>
       </div>
     </>
