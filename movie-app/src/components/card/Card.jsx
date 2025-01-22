@@ -1,8 +1,10 @@
 import './Card.css'
 import PropTypes from 'prop-types';
+import { useNavigate } from "react-router-dom";
+
 
 function Card({movieList}) {
-  console.log(movieList, '<< movieList in component')
+  const navigate = useNavigate();
   return (
     <>
     {movieList.length > 0 ? 
@@ -10,10 +12,11 @@ function Card({movieList}) {
     {/* Iterate through movieList prop, creates a new array with .map and render cards dynamically */}
     {movieList.map((movie => {
       return (
-      <div className="card" key={movie.id}>
-        <a href={`https://www.themoviedb.org/movie/${movie.id}-${movie.title}?language=en-US`}>
+      <div className="card" key={movie.id} onClick={() => {
+  console.log("Navigating with movie:", movie);
+  navigate('/details', { state: { movie } });
+}}>
         <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} className="card-img-top" alt={`${movie.title}-poster`}/>
-        </a>
         <div className="card-body">
           <p className="card-title">{movie.title}</p>
           <p className="card-text"><small>Release Date: {movie.release_date}</small></p>
