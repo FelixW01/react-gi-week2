@@ -4,3 +4,43 @@
   padding: 2rem;
   text-align: center;
 }
+
+body {
+  background-color: #1e1e1e;
+  color: #eaeaea;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+#searchInput {
+  background-color: #eaeaea;
+  color: #1e1e1e;
+  text-decoration: none;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem;
+  min-width: 100%;
+}
+
+#searchBtn {
+  margin: 0.5rem;
+  background-color: #eaeaea;
+  color: #1e1e1e;
+  padding: 0.5rem 1.75rem;
+  border-radius: 0.25rem;
+}
+
+.inputDiv {
+  margin: 1.5rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-width: 100%;
+}

@@ -1,0 +1,136 @@
+h1 {
+  color: #eaeaea;
+  font-size: 3rem;
+}
+h2 {
+  color: #eaeaea;
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.sub-title-div {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  width: 80%;
+  padding: 1rem;
+}
+
+#inputForm {
+  min-width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#searchInput {
+  padding: 0.5rem 0.6rem;
+  margin-right: 0.3rem;
+  background-color: #eaeaea;
+  color: #2a2b26;
+  min-width: 25%;
+  border-bottom: 8px solid transparent;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+#searchBtn {
+  padding: 0.5rem 1.2rem;
+  border-radius: 5px;
+  background-color: #eaeaea;
+  color: #2a2b26;
+  box-shadow: 3px 4px 4px #2a2b26;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+#searchBtn:hover {
+  background-color: #bdc3c7;
+}
+
+#heroDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 100%;
+  max-height: 50%;
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid #bdc3c7;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 80%;
+  min-height: 40%;
+  background-color: #eaeaea;
+  color: #2c3e50;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  flex: 0 0 auto;
+  width: 175px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 1rem;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  max-height: 100%;
+  overflow: auto;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  margin: 0.5rem 0;
+}
+
+#footer-container {
+  background-color: #eaeaea;
+  color: #2c3e50;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.6rem;
+}
+
+@media (max-width: 600px) {
+  .card-img-top {
+    width: 100px;
+    height: auto;
+  }
+}
