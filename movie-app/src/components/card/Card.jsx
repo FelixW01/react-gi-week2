@@ -12,9 +12,7 @@ function Card({movieList}) {
     {/* Iterate through movieList prop, creates a new array with .map and render cards dynamically */}
     {movieList.map((movie => {
       return (
-      <div className="card" key={movie.id} onClick={() => {
-  console.log("Navigating with movie:", movie);
-  navigate('/details', { state: { movie } });
+      <div className="card" key={movie.id} onClick={() => { navigate('/details', { state: { movie } });
 }}>
         <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} className="card-img-top" alt={`${movie.title}-poster`}/>
         <div className="card-body">
