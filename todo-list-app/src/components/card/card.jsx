@@ -18,7 +18,7 @@ function Card({ tasks, deleteTask }) {
         <div className="card-container">
           {tasks.map((task, index) => {
             return (
-              <div className="card" onClick={() => navigate('/taskdetail')} key={index}>
+              <div className="card" onClick={() => navigate('/taskdetail', {state: {task}})} key={index}>
                 <div className="card-body">
                   <p className="card-title">{task.title}</p>
                   <p className="card-text">{task.description}</p>
