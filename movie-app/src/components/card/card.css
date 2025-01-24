@@ -86,7 +86,9 @@ h2 {
 }
 
 .card:hover {
-  transform: translateY(-2px);
+  background-color: #d6d6d6;
+  transform: scale(1.02);
+  cursor: pointer;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
