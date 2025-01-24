@@ -1,4 +1,4 @@
-import './Card.css'
+import './card.css'
 import PropTypes from 'prop-types';
 import { useNavigate } from "react-router-dom";
 
