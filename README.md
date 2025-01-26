@@ -11,8 +11,7 @@ https://react-gi-week2.onrender.com/
 https://counter-1jxt.onrender.com
 
 ## Description
-Welcome to  Overcacast, your one stop shop for your seasonal clothing needs. Overcast focuses on delivering fashion solutions towards those who appreciates the cozy things in life.
-This website was created for the purpose of honing Javascript, HTML and CSS skills especially the practice of fetching an API and dynamically rendering said data into the DOM.
+This repo is created for the purpose of holding the assignments for react week 18 GI
 
 ## Table of Contents
 - [App Demo](#app-demo)
